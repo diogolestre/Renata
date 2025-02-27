@@ -61,6 +61,18 @@
             <button onclick="alert('Está mal! ÉS LINDA!!!MCLURRY!!')">Não</button>
         </div>
 
+       	<script>
+            function checkPassword() {
+            let password = prompt("Enter Password:");
+                if (password !== "14112023") {  // Change "mypassword" to your actual password
+                    alert("Incorrect Password!");
+                    window.location.href = "https://google.com"; // Redirect to another site if wrong
+                                    }
+        }
+
+    window.onload = checkPassword;
+</script>
+
     </center>
 </body>
 </html>

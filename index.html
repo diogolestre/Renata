@@ -61,14 +61,15 @@
             <button onclick="alert('Está mal! ÉS LINDA!!!MCLURRY!!')">Não</button>
         </div>
 
-       	<script>
-            function checkPassword() {
-            let password = prompt("Enter Password:");
-                if (password !== "14112023") {  // Change "mypassword" to your actual password
-                    alert("Incorrect Password!");
-                    window.location.href = "https://google.com"; // Redirect to another site if wrong
-                                    }
+      		<script>
+    function checkPassword() {
+		let user = prompt("Enter User");
+        let password = prompt("Enter Password:");
+        if (password !== "14112023" || user !== "Princesa")  {  // Change "mypassword" to your actual password
+            alert("Incorrect User/Password!");
+            window.location.href = "https://google.com"; // Redirect to another site if wrong
         }
+    }
 
     window.onload = checkPassword;
 </script>
